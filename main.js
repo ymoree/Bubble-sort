@@ -11,20 +11,18 @@ function sortArray(){
 /*Получаем масив*/
 function getArray(){
 	let isValid = 1; 
-	let arr = document.querySelector("#input").value.split(',');
+	let arr = document.querySelector("#input").value.split(',')
+	.map(t => parseInt(t));
 
 	/*Проверка на валидность*/
 	for (el of arr){
 		if (isNaN(el)){
 			let errorMsg = document.querySelector("#output")
 				.value = "Invalid values";
-				
+
 			isValid = 0;
 		}
 	}
-
-	arr.map(t => parseInt(t));
-	console.log(arr);
 
 	/*Если ввели что то неверно возвращаем undefinedd*/
 	return isValid ? arr : undefined;
