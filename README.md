@@ -3,7 +3,7 @@ Bubble Sort is a simple algorithm which is used to sort a given set of n element
 
 # Pros:
  • Simple to write </br>
- • Easy to understand
+ • Easy to understand </br>
  • Takes a few lines of code
 # Cons: 
  • Very slow because runs in O(n^2) time (More items is being sorted, the less efficient it is)
